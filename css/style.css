@@ -1,0 +1,458 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: bold;
+    font-variation-settings:
+        "width" 100;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    position: fixed;
+    background: #fff;
+    height: 75px;
+    display: flex;
+    padding: 0 5%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 10%;
+}
+
+.nav-menu {
+    display: flex;
+    flex: 0.7;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3%;
+}
+
+.nav-menu a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    color: #273a78;
+    text-decoration: underline;
+}
+
+.nav-menu button {
+    background-color: #273a78;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 8px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
+
+.nav-menu button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+#home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(9, 5, 54, 0.3)), url(/assets/home.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#home h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+#home p {
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#home .btn {
+    margin-top: 40px;
+}
+
+#home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#home a.btn-blue {
+    color: #fff;
+    background: #1b2d67;
+}
+
+#home a.btn-blue:hover {
+    color: #1b2d67;
+    background: #fff;
+}
+
+#layanan {
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#layanan .container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(320px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 3rem;
+    padding: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#layanan .card {
+    background: #F9F9FF;
+    text-align: center;
+    height: 100%;
+    padding-top: 30px;
+    border-radius: 5px;
+}
+
+#layanan .card i {
+    font-size: 2.3rem;
+}
+
+#layanan .card h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 13px 0 7px 0;
+}
+
+#layanan .card {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#kontak-kami {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(9, 5, 54, 0.3)), url(/assets/hubkami.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+
+#kontak-kami .kontak-isi {
+    padding: 10px 50px 10px 80px;
+    letter-spacing: 0.08rem;
+    color: #fff;
+}
+
+#kontak-kami .kontak-form {
+    margin-right: 100px;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+#kontak-kami .kontak-form input {
+    margin: 8px 0;
+    padding: 8px 50px;
+    border: 1px solid rgb(0, 26, 112);
+    outline: none;
+    border-radius: 10px;
+}
+
+#kontak-kami .kontak-form .btn {
+    margin-top: 40px;
+}
+
+#kontak-kami .kontak-form a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#kontak-kami .kontak-form .btn-blue {
+    color: #fff;
+    background: #1b2d67;
+}
+
+#kontak-kami .kontak-form .btn-blue:hover {
+    color: #1b2d67;
+    background: #5387f8;
+}
+
+#mengapa-kami {
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#mengapa-kami .container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 3rem;
+    align-items: center;
+}
+
+#mengapa-kami .card {
+    text-align: center;
+    height: 100%;
+    padding-top: 20px;
+    border-radius: 5px;
+}
+
+#mengapa-kami .card i,
+#mengapa-kami .card h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+#mengapa-kami .card p {
+    font-size: 1.5rem;
+}
+
+footer {
+    margin-top: 10vh;
+    background-color: #121e47;
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+footer h5 {
+    padding-top: 20px;
+}
+
+footer .footer-icon {
+    display: flex;
+    padding-top: 40px;
+    padding-left: 0;
+}
+
+footer .footer-icon a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 10px;
+    background-color: #101010;
+}
+
+footer .footer-icon a:hover {
+    color: #101010;
+    background-color: #fff;
+}
+
+footer .footer-menu {
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    margin: 0 8px;
+}
+
+footer .footer-menu a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1150px) {
+    nav img {
+        width: 15%;
+    }
+    #layanan .container {
+        grid-template-columns: repeat(2, minmax(320px, 1fr));
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav img {
+        width: 20%;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -150%;
+        top: 3rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu button {
+        margin: 1rem;
+        padding: 10px 24px;
+    }
+
+    .nav-menu.active {
+        padding: 0 0 1.5rem;
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #layanan{
+        padding: 40px 10px 0 10px;
+    }
+
+    #layanan .container {
+        grid-template-columns: repeat(1, minmax(320px, 1fr));
+    }
+
+    #layanan .card{
+        padding: 30px 10px 0 10px;
+    }
+
+    #kontak-kami {
+        flex-direction: column;
+        justify-content: baseline;
+        width: 100%;
+        height: 120vh;
+        margin-top: 30px;
+    }
+    #kontak-kami .kontak-isi{
+        padding: 50px 60px 20px 60px;
+    }
+
+    #kontak-kami .kontak-isi p,
+    #kontak-kami .kontak-isi h1,
+    #kontak-kami .kontak-isi h3 {
+        font-size: 1rem;
+        letter-spacing: 0.05;
+    }
+
+    #kontak-kami .kontak-form {
+        margin: auto;
+        padding: 50px 60px 20px 60px;
+    }
+
+    #mengapa-kami {
+        margin-top: 30px;
+    }
+
+    #mengapa-kami .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 1rem;
+    }
+
+    #mengapa-kami .card {
+        padding-top: 0;
+    }
+
+    #mengapa-kami .card i,
+    #mengapa-kami .card h3 {
+        font-size: 2rem;
+    }
+
+    #mengapa-kami .card p {
+        font-size: 1rem;
+    }
+
+    footer{
+        height: 50vh;
+    }
+
+    footer .footer-menu {
+        display: block;
+    }
+
+    footer .footer-menu li {
+        margin: 0 0 8px 0;
+    }
+}
